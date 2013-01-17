@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chickenmcnuggets</title>
+
+    <%= stylesheet_link_tag    "mobile/application", :media => "all" %>
+    <%= javascript_include_tag "mobile/application" %>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width" initial-scale=1, maximum-scale=1 /> 
+</head>
+<body>
+    <%= image_tag("Logo.png") %>
+
+  
+
+  <div data-role='page' id='poll'>
+    <div data-role='content'>
+<!--       <div data-role="header" data-tap-toogle="false" data-position="fixed" data-theme="b">
+        <%= image_tag("Logo.png")  %>
+      </div> -->
+      <%= yield %>
+    </div>
+
+     <div data-role="footer" data-id="footernav" data-tap-toogle="false"  data-theme="b">
+      <ul>
+        <li><a href="" data-icon="star">Aktualisieren</a></li>
+      </ul>
+    </div>
+  
+  </div>  
+
+</body>
+</html>

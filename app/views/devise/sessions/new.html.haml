@@ -1,0 +1,19 @@
+%h2 Einloggen
+= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "form-horizontal"}) do |f|
+  .control-group
+    = f.label "Email", class: "control-label"
+    .controls
+      = f.email_field :email
+  .control-group
+    = f.label "Passwort", class: "control-label"
+    .controls
+      = f.password_field :password
+  - if devise_mapping.rememberable?
+    .control-group
+      .controls
+        %label.checkbox
+          = f.check_box :remember_me, class: "checkbox"
+          Anmeldeinformationen merken?
+        = f.submit "Einloggen"  
+  
+= render "devise/shared/links"

@@ -1,0 +1,19 @@
+%h1= @poll.title 
+%h2= @poll.question
+
+- if @poll.exp_date >= Date.today and @poll.start_date <= Date.today
+  %img{ src: @chart_url } 
+
+  %table.table-stripe{:"data-role" => "table", :id => "poll_result_table", :"data-mode"=>"reflow"}
+    %thead
+      %tr
+        %th="Antwort"
+        %th="Stimmen"
+    %tbody
+      - @poll.answer_possibilities.each do |answer_possibility|
+        %tr
+          %td= answer_possibility.value 
+          %td= answer_possibility.answers.count 
+
+- else 
+  %h3= "Diese Umfrage liegt ausserhalb des Abstimmungszeitraum (Start: #{@poll.start_date}, Ende: #{@poll.exp_date})"
