@@ -222,6 +222,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (= 0.5.0)
+  bootstrap-sass
   cancan
   capistrano
   coffee-rails (~> 3.2.1)
