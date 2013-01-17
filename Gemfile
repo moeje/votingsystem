@@ -27,7 +27,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'haml'
-  gem 'bootstrap-sass'
+  #gem 'bootstrap-sass'
   gem 'formtastic'
   gem 'formtastic-plus-bootstrap'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
