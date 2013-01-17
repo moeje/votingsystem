@@ -227,6 +227,7 @@ DEPENDENCIES
   mysql2
   paperclip
   pry
+  rack (= 1.4.4)
   rails (= 3.2.3)
   rspec
   ruby_parser

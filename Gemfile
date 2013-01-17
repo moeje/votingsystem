@@ -15,6 +15,7 @@ gem 'paperclip'
 gem 'multi_json'
 gem 'capistrano'
 gem 'mysql2'
+gem 'rack', '1.4.4'
 
 group :test do
   gem 'rspec'
