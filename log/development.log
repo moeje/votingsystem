@@ -5857,3 +5857,79 @@ Served asset /Logo.png - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-17 15:25:30 +0100
 Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (20.8ms)[0m  CREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "namespace" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (1.9ms)[0m  CREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')
+  [1m[36m (8.7ms)[0m  [1mCREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_namespace')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')
+  [1m[36m (3.1ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (3.6ms)[0m  CREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "answer_possibilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value" varchar(255), "poll_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "browser" varchar(255), "os" varchar(255), "ip" varchar(255), "answer_possibility_id" integer, "value" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "poll_id" integer, "guid" varchar(255), "comment_id" integer) [0m
+  [1m[35m (3.6ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "poll_id" integer) [0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "creators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "firstname" varchar(255), "lastname" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("creators")[0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX "index_creators_on_email" ON "creators" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("creators")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_creators_on_email')
+  [1m[36m (11.3ms)[0m  [1mCREATE UNIQUE INDEX "index_creators_on_reset_password_token" ON "creators" ("reset_password_token")[0m
+  [1m[35m (4.6ms)[0m  CREATE TABLE "poll_creations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "poll_type_id" integer, "category_id" integer, "title" varchar(255), "question" varchar(255), "exp_date" date, "chart_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "poll_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "polls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "question" varchar(255), "exp_date" date, "creator_id" integer, "poll_type_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category_id" integer, "chart_type" varchar(255), "start_date" date, "shorturl" varchar(255)) 
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (2.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411122')[0m
+  [1m[35m (2.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012271084411116')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411121')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014093333')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012261014114444')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014125559')
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012261014041111')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012271084411120')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411112')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014125555')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411111')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014125557')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411114')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012271084411117')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271014125559')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012271084411115')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271084411118')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130108101701')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012261014125556')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012271084411119')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012261014072222')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014125558')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "poll_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 17 Jan 2013 15:53:58 UTC +00:00], ["name", "single choice"], ["updated_at", Thu, 17 Jan 2013 15:53:58 UTC +00:00]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "poll_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 17 Jan 2013 15:53:58 UTC +00:00], ["name", "multiple choice"], ["updated_at", Thu, 17 Jan 2013 15:53:58 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$wSBiz9/PRYQNFY317Ss30O.Lp5t1KWmaFjzHgYNeq4EIDcdJn3tHS"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCreator Exists (0.1ms)[0m  [1mSELECT 1 FROM "creators" WHERE "creators"."email" = 'meier@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "creators" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "firstname", "last_sign_in_at", "last_sign_in_ip", "lastname", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "meier@example.com"], ["encrypted_password", "$2a$10$zENthyDyjL8absdkBjCH/eLFS3YgIezY.h1R6JVFDF6.ekZfn4s7y"], ["firstname", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lastname", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00], ["name", "FH Allgemein"], ["updated_at", Thu, 17 Jan 2013 15:53:59 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
