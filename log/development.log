@@ -7027,3 +7027,2429 @@ Served asset /Logo.png - 304 Not Modified (1ms)
 
 Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-18 10:39:09 +0100
 Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (17.3ms)
+  [1m[36mCreator Load (3.6ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  Rendered layouts/_desktop.html.haml (55.5ms)
+Completed 200 OK in 93ms (Views: 87.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /desktop/application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/man_black.png" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /man_black.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /Logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/man_grey.png" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /man_grey.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 22:42:49 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 22:44:18 +0100
+Processing by PollsController#index as HTML
+  [1m[35mCreator Load (0.6ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3
+  Rendered polls/index.html.haml within layouts/application (19.1ms)
+  Rendered layouts/_desktop.html.haml (15.7ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /desktop/application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /Logo.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 22:44:19 +0100
+Served asset /bin.png - 304 Not Modified (4ms)
+
+
+Started GET "/polls/3" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 3 GROUP BY guid[0m
+  [1m[35mAnswerPossibility Load (0.3ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 3
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 3
+  Rendered polls/show.html.haml within layouts/application (59.0ms)
+  Rendered layouts/_desktop.html.haml (187.6ms)
+Completed 200 OK in 296ms (Views: 253.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /desktop/application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /white.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 22:44:37 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddShorturlToPolls (20130108101701)
+Migrating to CreatePoll (2012261014041111)
+Migrating to CreateAnswerPossibility (2012261014072222)
+Migrating to CreateAnswer (2012261014093333)
+Migrating to CreatePollType (2012261014114444)
+Migrating to CreateCategory (2012261014125555)
+Migrating to DeviseCreateAdminUsers (2012261014125556)
+Migrating to CreateAdminNotes (2012261014125557)
+Migrating to MoveAdminNotesToComments (2012261014125558)
+Migrating to AddCategoryidToPoll (2012261014125559)
+Migrating to AddPollIdToAnswers (2012271014125559)
+Migrating to RenameQuestinInPoll (2012271084411111)
+Migrating to AddChartTypeToPolls (2012271084411112)
+Migrating to DeviseCreateCreators (2012271084411114)
+Migrating to AddFirstnameToCreator (2012271084411115)
+Migrating to AddStartDateToPolls (2012271084411116)
+Migrating to CreateComments (2012271084411117)
+Migrating to AddGuidToAnswer (2012271084411118)
+Migrating to RemoveAnswerIdFromComment (2012271084411119)
+Migrating to AddCommentidToAnswer (2012271084411120)
+Migrating to RenameUseridInPolls (2012271084411121)
+Migrating to AddPollIdToComments (2012271084411122)
+  [1m[35m (1.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answer_possibilities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("creators")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_creators_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_creators_on_email')[0m
+  [1m[35m (0.4ms)[0m  PRAGMA index_list("poll_creations")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("poll_types")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("polls")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddShorturlToPolls (20130108101701)
+Migrating to AddSlugToPolls (20130123222510)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "polls" ADD "slug" varchar(255)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130123222510')[0m
+  [1m[35m (17.6ms)[0m  commit transaction
+Migrating to CreatePoll (2012261014041111)
+Migrating to CreateAnswerPossibility (2012261014072222)
+Migrating to CreateAnswer (2012261014093333)
+Migrating to CreatePollType (2012261014114444)
+Migrating to CreateCategory (2012261014125555)
+Migrating to DeviseCreateAdminUsers (2012261014125556)
+Migrating to CreateAdminNotes (2012261014125557)
+Migrating to MoveAdminNotesToComments (2012261014125558)
+Migrating to AddCategoryidToPoll (2012261014125559)
+Migrating to AddPollIdToAnswers (2012271014125559)
+Migrating to RenameQuestinInPoll (2012271084411111)
+Migrating to AddChartTypeToPolls (2012271084411112)
+Migrating to DeviseCreateCreators (2012271084411114)
+Migrating to AddFirstnameToCreator (2012271084411115)
+Migrating to AddStartDateToPolls (2012271084411116)
+Migrating to CreateComments (2012271084411117)
+Migrating to AddGuidToAnswer (2012271084411118)
+Migrating to RemoveAnswerIdFromComment (2012271084411119)
+Migrating to AddCommentidToAnswer (2012271084411120)
+Migrating to RenameUseridInPolls (2012271084411121)
+Migrating to AddPollIdToComments (2012271084411122)
+  [1m[36m (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_namespace')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answer_possibilities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("categories")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("creators")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_creators_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_creators_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("poll_creations")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("poll_types")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("polls")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-23 23:27:59 +0100
+
+NameError (uninitialized constant Poll::FriendlyId):
+  app/models/poll.rb:3:in `<class:Poll>'
+  app/models/poll.rb:1:in `<top (required)>'
+  app/admin/polls.rb:1:in `<top (required)>'
+  config/routes.rb:29:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.5ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-23 23:28:56 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (17.6ms)
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  Rendered layouts/_desktop.html.haml (373.3ms)
+Completed 200 OK in 953ms (Views: 949.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:28:57 +0100
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:28:57 +0100
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:28:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (245ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:28:57 +0100
+Served asset /application.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:28:57 +0100
+Served asset /desktop/application.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:28:58 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:28:58 +0100
+Served asset /white.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/man_grey.png" for 127.0.0.1 at 2013-01-23 23:28:58 +0100
+Served asset /man_grey.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:28:58 +0100
+Served asset /Logo.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/man_black.png" for 127.0.0.1 at 2013-01-23 23:28:58 +0100
+Served asset /man_black.png - 304 Not Modified (11ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:29:02 +0100
+Processing by PollsController#index as HTML
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.2ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3
+  Rendered polls/index.html.haml within layouts/application (612.1ms)
+  Rendered layouts/_desktop.html.haml (19.9ms)
+Completed 200 OK in 654ms (Views: 645.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /desktop/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (24ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /pie_chart.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /star.png - 304 Not Modified (26ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /edit.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:29:03 +0100
+Served asset /bin.png - 304 Not Modified (8ms)
+
+
+Started GET "/polls/new" for 127.0.0.1 at 2013-01-23 23:29:05 +0100
+Processing by PollsController#new as HTML
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPollType Load (0.2ms)[0m  SELECT "poll_types".* FROM "poll_types" 
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered polls/_form.html.erb (3257.0ms)
+  Rendered polls/new.html.erb within layouts/application (3260.2ms)
+  Rendered layouts/_desktop.html.haml (25.5ms)
+Completed 200 OK in 3303ms (Views: 3292.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /application.css - 304 Not Modified (154ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:29:09 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"1", "category_id"=>"1", "title"=>"Essen", "question"=>"Was isst du am liebsten?", "start_date(3i)"=>"23", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie", "answer_possibilities_attributes"=>{"1358980171476"=>{"value"=>"jkljkljkljkl"}, "1358980178929"=>{"value"=>"jlkjklljkljk"}}}, "button"=>""}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mPoll Load (13.0ms)[0m  SELECT "polls".* FROM "polls" WHERE ("slug" = 'was-isst-du-am-liebsten' OR "slug" LIKE 'was-isst-du-am-liebsten--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (116.8ms)[0m  INSERT INTO "polls" ("category_id", "chart_type", "created_at", "creator_id", "exp_date", "poll_type_id", "question", "shorturl", "slug", "start_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["category_id", 1], ["chart_type", "pie"], ["created_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00], ["creator_id", 2], ["exp_date", Wed, 30 Jan 2013], ["poll_type_id", 1], ["question", "Was isst du am liebsten?"], ["shorturl", nil], ["slug", "was-isst-du-am-liebsten"], ["start_date", Wed, 23 Jan 2013], ["title", "Essen"], ["updated_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00], ["poll_id", 4], ["updated_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00], ["value", "jkljkljkljkl"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00], ["poll_id", 4], ["updated_at", Wed, 23 Jan 2013 22:29:46 UTC +00:00], ["value", "jlkjklljkljk"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/polls?notice=Newsentry+was+successfully+created.
+Completed 302 Found in 212ms (ActiveRecord: 164.3ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[35mCreator Load (0.5ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.7ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 4[0m
+  Rendered polls/index.html.haml within layouts/application (138.0ms)
+  Rendered layouts/_desktop.html.haml (20.9ms)
+Completed 200 OK in 183ms (Views: 170.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:29:46 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:29:47 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:29:47 +0100
+Served asset /white.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:29:47 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:29:47 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:29:47 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/show?id=4" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Processing by PollVotingController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = '4' LIMIT 1
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mAnswerPossibility Load (5.3ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 4
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 7
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 8[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 8
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 8
+  Rendered poll_voting/show.html.haml within layouts/application (19.0ms)
+  Rendered layouts/_mobile.html.erb (203.3ms)
+Completed 200 OK in 264ms (Views: 234.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /mobile/application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:29:53 +0100
+Served asset /mobile/application.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:29:54 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:29:54 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (10ms)
+
+
+Started GET "/poll_voting/essen" for 127.0.0.1 at 2013-01-23 23:30:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/poll_voting/essen"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/poll_voting/show?id=essen" for 127.0.0.1 at 2013-01-23 23:30:33 +0100
+Processing by PollVotingController#show as HTML
+  Parameters: {"id"=>"essen"}
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'essen' LIMIT 1[0m
+  [1m[35mPoll Load (0.2ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "essen"]]
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Poll with id=essen):
+  app/controllers/poll_voting_controller.rb:9:in `show'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.3ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.1ms)
+
+
+Started GET "/polls/new" for 127.0.0.1 at 2013-01-23 23:31:12 +0100
+Processing by PollsController#new as HTML
+  [1m[36mCreator Load (0.6ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPollType Load (0.3ms)[0m  SELECT "poll_types".* FROM "poll_types" 
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered polls/_form.html.erb (313.9ms)
+  Rendered polls/new.html.erb within layouts/application (319.8ms)
+  Rendered layouts/_desktop.html.haml (27.3ms)
+Completed 200 OK in 617ms (Views: 357.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /desktop/application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /Logo.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:31:14 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"1", "category_id"=>"1", "title"=>"titten", "question"=>"njaaaa", "start_date(3i)"=>"15", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie", "answer_possibilities_attributes"=>{"1358980287042"=>{"value"=>"asdfsdfsdf"}, "1358980293172"=>{"value"=>"iiuoiuouiooui"}}}, "button"=>""}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mPoll Load (0.5ms)[0m  SELECT "polls".* FROM "polls" WHERE ("slug" = 'titten' OR "slug" LIKE 'titten--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" IS NULL[0m
+  [1m[35mPollType Load (0.3ms)[0m  SELECT "poll_types".* FROM "poll_types" 
+  [1m[36mPollType Load (0.3ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" WHERE "poll_types"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered polls/_form.html.erb (348.8ms)
+  Rendered polls/new.html.erb within layouts/application (352.8ms)
+  Rendered layouts/_desktop.html.haml (24.8ms)
+Completed 200 OK in 432ms (Views: 381.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Served asset /desktop/application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:31:39 +0100
+Served asset /application.js - 304 Not Modified (204ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:31:40 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:31:40 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:31:40 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:31:48 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"1", "category_id"=>"1", "title"=>"titten", "question"=>"njaaaa", "start_date(3i)"=>"23", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie"}, "button"=>""}
+  [1m[36mCreator Load (0.8ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE ("slug" = 'titten' OR "slug" LIKE 'titten--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "polls" ("category_id", "chart_type", "created_at", "creator_id", "exp_date", "poll_type_id", "question", "shorturl", "slug", "start_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["chart_type", "pie"], ["created_at", Wed, 23 Jan 2013 22:31:48 UTC +00:00], ["creator_id", 2], ["exp_date", Wed, 30 Jan 2013], ["poll_type_id", 1], ["question", "njaaaa"], ["shorturl", nil], ["slug", "titten"], ["start_date", Wed, 23 Jan 2013], ["title", "titten"], ["updated_at", Wed, 23 Jan 2013 22:31:48 UTC +00:00]]
+  [1m[35m (19.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/controllers/polls_controller.rb:71:in `block in create'
+  app/controllers/polls_controller.rb:67:in `create'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.9ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.7ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Processing by PollsController#index as HTML
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPoll Load (1.3ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 4
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 5[0m
+  Rendered polls/index.html.haml within layouts/application (38.1ms)
+  Rendered layouts/_desktop.html.haml (24.1ms)
+Completed 200 OK in 94ms (Views: 87.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /desktop/application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /bin.png - 304 Not Modified (16ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:32:00 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/show?id=5" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Processing by PollVotingController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = '5' LIMIT 1
+  [1m[36mPoll Load (0.3ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mAnswerPossibility Load (0.2ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 5
+  Rendered poll_voting/show.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_mobile.html.erb (18.1ms)
+Completed 200 OK in 41ms (Views: 34.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /mobile/application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /mobile/application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:32:06 +0100
+Served asset /Logo.png - 304 Not Modified (272ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:32:07 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (4ms)
+
+
+Started GET "/poll_voting/vote?id=5" for 127.0.0.1 at 2013-01-23 23:32:13 +0100
+Processing by PollVotingController#vote as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '5' LIMIT 1[0m
+  [1m[35mPoll Load (0.2ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mPollType Load (0.4ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" WHERE "poll_types"."id" = 1 LIMIT 1[0m
+  [1m[35mAnswerPossibility Load (0.6ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 5
+  Rendered poll_voting/_comments.html.haml (3.3ms)
+  Rendered poll_voting/_single_choice_form.html.haml (34.7ms)
+  Rendered poll_voting/vote.html.haml within layouts/application (47.1ms)
+  Rendered layouts/_mobile.html.erb (19.3ms)
+Completed 200 OK in 158ms (Views: 79.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /mobile/application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /mobile/application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /Logo.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:32:14 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/vote?id=titten" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Processing by PollVotingController#vote as HTML
+  Parameters: {"id"=>"titten"}
+  [1m[36mPoll Load (7.5ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'titten' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'titten' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'titten' LIMIT 1[0m
+  [1m[35mPollType Load (0.4ms)[0m  SELECT "poll_types".* FROM "poll_types" WHERE "poll_types"."id" = 1 LIMIT 1
+  [1m[36mAnswerPossibility Load (0.4ms)[0m  [1mSELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 5[0m
+  Rendered poll_voting/_comments.html.haml (0.8ms)
+  Rendered poll_voting/_single_choice_form.html.haml (27.0ms)
+  Rendered poll_voting/vote.html.haml within layouts/application (42.8ms)
+  Rendered layouts/_mobile.html.erb (38.0ms)
+Completed 200 OK in 122ms (Views: 106.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /mobile/application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:21 +0100
+Served asset /mobile/application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:32:22 +0100
+Served asset /Logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:32:22 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/titten" for 127.0.0.1 at 2013-01-23 23:32:27 +0100
+
+ActionController::RoutingError (No route matches [GET] "/poll_voting/titten"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/polls/new" for 127.0.0.1 at 2013-01-23 23:32:39 +0100
+Processing by PollsController#new as HTML
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPollType Load (0.4ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" [0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered polls/_form.html.erb (272.2ms)
+  Rendered polls/new.html.erb within layouts/application (273.9ms)
+  Rendered layouts/_desktop.html.haml (21.7ms)
+Completed 200 OK in 309ms (Views: 303.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /desktop/application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /white.png - 304 Not Modified (199ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:32:40 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:33:09 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"1", "category_id"=>"1", "title"=>"hah", "question"=>"dsafsdafdsf?", "start_date(3i)"=>"23", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie", "answer_possibilities_attributes"=>{"1358980378524"=>{"value"=>"dsfsdfsdfsd"}, "1358980384420"=>{"value"=>"jjlkjklkljjkljlk"}}}, "button"=>""}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35m (7.5ms)[0m  begin transaction
+  [1m[36mPoll Load (0.5ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE ("slug" = 'hah' OR "slug" LIKE 'hah--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO "polls" ("category_id", "chart_type", "created_at", "creator_id", "exp_date", "poll_type_id", "question", "shorturl", "slug", "start_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["chart_type", "pie"], ["created_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00], ["creator_id", 2], ["exp_date", Wed, 30 Jan 2013], ["poll_type_id", 1], ["question", "dsafsdafdsf?"], ["shorturl", nil], ["slug", "hah"], ["start_date", Wed, 23 Jan 2013], ["title", "hah"], ["updated_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00], ["poll_id", 6], ["updated_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00], ["value", "dsfsdfsdfsd"]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00], ["poll_id", 6], ["updated_at", Wed, 23 Jan 2013 22:33:09 UTC +00:00], ["value", "jjlkjklkljjkljlk"]]
+  [1m[35m (14.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/polls?notice=Newsentry+was+successfully+created.
+Completed 302 Found in 110ms (ActiveRecord: 65.7ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:33:09 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[36mCreator Load (3.3ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPoll Load (0.5ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 4
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 6
+  Rendered polls/index.html.haml within layouts/application (54.8ms)
+  Rendered layouts/_desktop.html.haml (20.7ms)
+Completed 200 OK in 118ms (Views: 108.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /desktop/application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /white.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:33:10 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/show?id=3" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Processing by PollVotingController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '3' LIMIT 1[0m
+  [1m[35mPoll Load (0.2ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mAnswerPossibility Load (0.3ms)[0m  [1mSELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 3[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 6[0m
+  Rendered poll_voting/show.html.haml within layouts/application (11.9ms)
+  Rendered layouts/_mobile.html.erb (17.3ms)
+Completed 200 OK in 53ms (Views: 38.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /mobile/application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:14 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:15 +0100
+Served asset /mobile/application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:33:15 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:33:15 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (1ms)
+
+
+Started GET "/polls/6" for 127.0.0.1 at 2013-01-23 23:33:27 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.3ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '6' LIMIT 1[0m
+  [1m[35mPoll Load (0.2ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 6 GROUP BY guid[0m
+  [1m[35mAnswerPossibility Load (0.3ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 6
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 6[0m
+  [1m[35mComment Load (7.8ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 6
+  Rendered polls/show.html.haml within layouts/application (60.6ms)
+  Rendered layouts/_desktop.html.haml (14.8ms)
+Completed 200 OK in 115ms (Views: 75.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:27 +0100
+Served asset /application.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:27 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /Logo.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /edit.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /pie_chart.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:33:28 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls/HAH" for 127.0.0.1 at 2013-01-23 23:33:32 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"HAH"}
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPoll Load (3.6ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'HAH' LIMIT 1
+  [1m[36mPoll Load (0.2ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1[0m  [["id", "HAH"]]
+Completed 500 Internal Server Error in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Poll with id=HAH):
+  app/controllers/polls_controller.rb:102:in `show'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.7ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.1ms)
+
+
+Started GET "/polls/hah" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"hah"}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.3ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'hah' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 6 GROUP BY guid
+  [1m[36mAnswerPossibility Load (0.5ms)[0m  [1mSELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 6[0m
+  [1m[35m (6.4ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 6
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 6[0m
+  Rendered polls/show.html.haml within layouts/application (10.2ms)
+  Rendered layouts/_desktop.html.haml (27.2ms)
+Completed 200 OK in 98ms (Views: 48.3ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /desktop/application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /Logo.png - 304 Not Modified (24ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /bin.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:33:37 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls/6" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1
+  [1m[36mPoll Load (0.3ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = '6' LIMIT 1[0m
+  [1m[35mPoll Load (0.2ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 6 GROUP BY guid[0m
+  [1m[35mAnswerPossibility Load (0.3ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 6
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 9[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 10
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 6[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 6
+  Rendered polls/show.html.haml within layouts/application (17.3ms)
+  Rendered layouts/_desktop.html.haml (20.5ms)
+Completed 200 OK in 104ms (Views: 51.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /desktop/application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /white.png - 304 Not Modified (13ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /pie_chart.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /bin.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:34:37 +0100
+Served asset /edit.png - 304 Not Modified (12ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:39:29 +0100
+Processing by PollsController#index as HTML
+  [1m[36mCreator Load (0.3ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 2
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 3[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 4
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 6
+  Rendered polls/index.html.haml within layouts/application (93.3ms)
+  Rendered layouts/_desktop.html.haml (15.5ms)
+Completed 200 OK in 175ms (Views: 115.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /desktop/application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /star.png - 304 Not Modified (18ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /pie_chart.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /white.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /Logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:39:30 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:39:31 +0100
+Served asset /bin.png - 304 Not Modified (5ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (19.0ms)[0m  DROP TABLE "active_admin_comments"
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "namespace" varchar(255)) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (3.0ms)[0m  [1mCREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (9.8ms)[0m  CREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (7.5ms)[0m  CREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (6.4ms)[0m  [1mDROP TABLE "admin_users"[0m
+  [1m[35m (5.1ms)[0m  CREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (3.8ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (3.9ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[35m (11.2ms)[0m  DROP TABLE "answer_possibilities"
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "answer_possibilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value" varchar(255), "poll_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (7.5ms)[0m  DROP TABLE "answers"
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "browser" varchar(255), "os" varchar(255), "ip" varchar(255), "answer_possibility_id" integer, "value" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "poll_id" integer, "guid" varchar(255), "comment_id" integer) [0m
+  [1m[35m (4.8ms)[0m  DROP TABLE "categories"
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (3.8ms)[0m  DROP TABLE "comments"
+  [1m[36m (14.4ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "poll_id" integer) [0m
+  [1m[35m (8.4ms)[0m  DROP TABLE "creators"
+  [1m[36m (12.3ms)[0m  [1mCREATE TABLE "creators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "firstname" varchar(255), "lastname" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("creators")
+  [1m[36m (11.3ms)[0m  [1mCREATE UNIQUE INDEX "index_creators_on_email" ON "creators" ("email")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("creators")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_creators_on_email')[0m
+  [1m[35m (9.0ms)[0m  CREATE UNIQUE INDEX "index_creators_on_reset_password_token" ON "creators" ("reset_password_token")
+  [1m[36m (8.6ms)[0m  [1mDROP TABLE "poll_creations"[0m
+  [1m[35m (6.5ms)[0m  CREATE TABLE "poll_creations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "poll_type_id" integer, "category_id" integer, "title" varchar(255), "question" varchar(255), "exp_date" date, "chart_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (14.0ms)[0m  [1mDROP TABLE "poll_types"[0m
+  [1m[35m (9.4ms)[0m  CREATE TABLE "poll_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (5.9ms)[0m  [1mDROP TABLE "polls"[0m
+  [1m[35m (13.8ms)[0m  CREATE TABLE "polls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "question" varchar(255), "exp_date" date, "creator_id" integer, "poll_type_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category_id" integer, "chart_type" varchar(255), "start_date" date, "shorturl" varchar(255), "slug" varchar(255)) 
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (40.0ms)[0m  INSERT INTO "poll_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:40:33 UTC +00:00], ["name", "single choice"], ["updated_at", Wed, 23 Jan 2013 22:40:33 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "poll_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:40:33 UTC +00:00], ["name", "multiple choice"], ["updated_at", Wed, 23 Jan 2013 22:40:33 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAdminUser Exists (0.2ms)[0m  SELECT 1 FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$Eg7tLefYLmxeAQIHWrVVq.N/76TeqQEximrDgMAsEjvobMi1gGJJu"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCreator Exists (0.2ms)[0m  SELECT 1 FROM "creators" WHERE "creators"."email" = 'meier@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "creators" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "firstname", "last_sign_in_at", "last_sign_in_ip", "lastname", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "meier@example.com"], ["encrypted_password", "$2a$10$SgDtuaa6e0e8hTcxfW4Eiu4r4c62e/zal09rT/Zx0bp70r4lR1L2e"], ["firstname", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lastname", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00], ["name", "FH Allgemein"], ["updated_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00], ["name", "Sonstiges"], ["updated_at", Wed, 23 Jan 2013 22:40:34 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-23 23:40:50 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (3.6ms)
+  [1m[36mCreator Load (1.7ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 2 LIMIT 1[0m
+  Rendered layouts/_desktop.html.haml (30.7ms)
+Completed 200 OK in 205ms (Views: 201.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /desktop/application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /Logo.png - 304 Not Modified (29ms)
+
+
+Started GET "/assets/man_black.png" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /man_black.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/man_grey.png" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /man_grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:40:51 +0100
+Served asset /white.png - 304 Not Modified (9ms)
+
+
+Started GET "/creators/sign_in" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.haml (18.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (48.2ms)
+  Rendered layouts/_desktop.html.haml (17.5ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /desktop/application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:40:54 +0100
+Served asset /Logo.png - 304 Not Modified (1ms)
+
+
+Started POST "/creators/sign_in" for 127.0.0.1 at 2013-01-23 23:41:02 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "creator"=>{"email"=>"meier@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Einloggen"}
+  [1m[35mCreator Load (1.2ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."email" = 'meier@example.com' LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  UPDATE "creators" SET "last_sign_in_at" = '2013-01-23 22:41:02.978083', "current_sign_in_at" = '2013-01-23 22:41:02.978083', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-01-23 22:41:02.982342' WHERE "creators"."id" = 1
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/polls
+Completed 302 Found in 679ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Processing by PollsController#index as HTML
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPoll Load (0.6ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1[0m
+  Rendered polls/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_desktop.html.haml (26.7ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /desktop/application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /Logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /star.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:41:03 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls/new" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Processing by PollsController#new as HTML
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPollType Load (0.3ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" [0m
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered polls/_form.html.erb (302.2ms)
+  Rendered polls/new.html.erb within layouts/application (303.8ms)
+  Rendered layouts/_desktop.html.haml (19.3ms)
+Completed 200 OK in 342ms (Views: 330.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /jquery.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /desktop/application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:41:05 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"2", "category_id"=>"1", "title"=>"title", "question"=>"asdfsadfsdaf", "start_date(3i)"=>"23", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie", "answer_possibilities_attributes"=>{"1358980887643"=>{"value"=>"asdfsadfsd"}, "1358980893396"=>{"value"=>"lkjjkjjkjlkjklljk"}, "1358980898483"=>{"value"=>"kjhjkljkljkljlk"}}}, "button"=>""}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPoll Load (0.8ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE ("slug" = 'title' OR "slug" LIKE 'title--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "polls" ("category_id", "chart_type", "created_at", "creator_id", "exp_date", "poll_type_id", "question", "shorturl", "slug", "start_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["chart_type", "pie"], ["created_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["creator_id", 1], ["exp_date", Wed, 30 Jan 2013], ["poll_type_id", 2], ["question", "asdfsadfsdaf"], ["shorturl", nil], ["slug", "title"], ["start_date", Wed, 23 Jan 2013], ["title", "title"], ["updated_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00]]
+  [1m[35m (24.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["poll_id", 1], ["updated_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["value", "asdfsadfsd"]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["poll_id", 1], ["updated_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["value", "lkjjkjjkjlkjklljk"]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["poll_id", 1], ["updated_at", Wed, 23 Jan 2013 22:41:44 UTC +00:00], ["value", "kjhjkljkljkljlk"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/polls?notice=Newsentry+was+successfully+created.
+Completed 302 Found in 129ms (ActiveRecord: 67.2ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1
+  Rendered polls/index.html.haml within layouts/application (30.7ms)
+  Rendered layouts/_desktop.html.haml (165.4ms)
+Completed 200 OK in 237ms (Views: 227.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Served asset /desktop/application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:44 +0100
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:41:45 +0100
+Served asset /bin.png - 304 Not Modified (5ms)
+
+
+Started GET "/polls/title" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"title"}
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.3ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'title' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 1 GROUP BY guid[0m
+  [1m[35mAnswerPossibility Load (0.3ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2
+  [1m[36m (2.8ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 1[0m
+  Rendered polls/show.html.haml within layouts/application (23.1ms)
+  Rendered layouts/_desktop.html.haml (14.7ms)
+Completed 200 OK in 85ms (Views: 49.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Served asset /desktop/application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:52 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (16ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /pie_chart.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /white.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /Logo.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:41:53 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/poll_voting/show?id=title" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Processing by PollVotingController#show as HTML
+  Parameters: {"id"=>"title"}
+  [1m[35mPoll Load (0.5ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'title' LIMIT 1
+  [1m[36mAnswerPossibility Load (0.5ms)[0m  [1mSELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 3
+  Rendered poll_voting/show.html.haml within layouts/application (7.8ms)
+  Rendered layouts/_mobile.html.erb (28.0ms)
+Completed 200 OK in 70ms (Views: 46.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/mobile/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /mobile/application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/mobile/mobile_polls.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /mobile/mobile_polls.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.mobile.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /jquery.mobile.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.mobile.css?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /jquery.mobile.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/mobile/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:41:56 +0100
+Served asset /mobile/application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:41:57 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-mobile/ajax-loader.gif" for 127.0.0.1 at 2013-01-23 23:41:57 +0100
+Served asset /jquery-mobile/ajax-loader.gif - 304 Not Modified (1ms)
+
+
+Started GET "/polls/title/edit" for 127.0.0.1 at 2013-01-23 23:42:00 +0100
+Processing by PollsController#edit as HTML
+  Parameters: {"id"=>"title"}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.3ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'title' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  [1m[35mPollType Load (0.8ms)[0m  SELECT "poll_types".* FROM "poll_types" 
+  [1m[36mPollType Load (0.5ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" WHERE "poll_types"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mAnswerPossibility Load (0.8ms)[0m  SELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 1
+  Rendered polls/_form.html.erb (607.4ms)
+  Rendered polls/edit.html.erb within layouts/application (611.4ms)
+  Rendered layouts/_desktop.html.haml (26.1ms)
+Completed 200 OK in 656ms (Views: 644.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /desktop/application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:42:01 +0100
+Served asset /white.png - 304 Not Modified (1ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:43:30 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.3ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  Rendered polls/index.html.haml within layouts/application (89.8ms)
+  Rendered layouts/_desktop.html.haml (20.8ms)
+Completed 200 OK in 188ms (Views: 121.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:43:31 +0100
+Served asset /application.css - 304 Not Modified (153ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /desktop/application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /star.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:43:32 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/shorturl" for 127.0.0.1 at 2013-01-23 23:43:36 +0100
+
+ActionController::RoutingError (No route matches [GET] "/shorturl"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/polls/new" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Processing by PollsController#new as HTML
+  [1m[35mCreator Load (0.5ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPollType Load (0.8ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" [0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" 
+  Rendered polls/_form.html.erb (363.4ms)
+  Rendered polls/new.html.erb within layouts/application (365.1ms)
+  Rendered layouts/_desktop.html.haml (30.4ms)
+Completed 200 OK in 413ms (Views: 406.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:43:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:43:47 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:43:47 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:43:47 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/polls" for 127.0.0.1 at 2013-01-23 23:44:11 +0100
+Processing by PollsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qToN0hmlrHmLInrCMew3L8Head6DWhnxGBMN5h3XoxQ=", "poll"=>{"poll_type_id"=>"1", "category_id"=>"1", "title"=>"xgdsfg", "question"=>"sdfsdfsdf", "start_date(3i)"=>"23", "start_date(2i)"=>"1", "start_date(1i)"=>"2013", "exp_date(3i)"=>"30", "exp_date(2i)"=>"1", "exp_date(1i)"=>"2013", "chart_type"=>"pie", "answer_possibilities_attributes"=>{"1358981041090"=>{"value"=>"sdgsdf"}, "1358981047562"=>{"value"=>"sdgsdgs"}}}, "button"=>""}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE ("slug" = 'xgdsfg' OR "slug" LIKE 'xgdsfg--%'ESCAPE '\') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "polls" ("category_id", "chart_type", "created_at", "creator_id", "exp_date", "poll_type_id", "question", "shorturl", "slug", "start_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category_id", 1], ["chart_type", "pie"], ["created_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00], ["creator_id", 1], ["exp_date", Wed, 30 Jan 2013], ["poll_type_id", 1], ["question", "sdfsdfsdf"], ["shorturl", "http://tinyurl.com/acmxhjr"], ["slug", "xgdsfg"], ["start_date", Wed, 23 Jan 2013], ["title", "xgdsfg"], ["updated_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00]]
+  [1m[35m (27.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00], ["poll_id", 2], ["updated_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00], ["value", "sdgsdf"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "answer_possibilities" ("created_at", "poll_id", "updated_at", "value") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00], ["poll_id", 2], ["updated_at", Wed, 23 Jan 2013 22:44:12 UTC +00:00], ["value", "sdgsdgs"]]
+  [1m[35m (6.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/polls?notice=Newsentry+was+successfully+created.
+Completed 302 Found in 1268ms (ActiveRecord: 45.5ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:44:12 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.9ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 2
+  Rendered polls/index.html.haml within layouts/application (29.3ms)
+  Rendered layouts/_desktop.html.haml (13.1ms)
+Completed 200 OK in 62ms (Views: 51.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:44:12 +0100
+Served asset /application.css - 304 Not Modified (154ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /desktop/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /Logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /white.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:44:13 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls?notice=Newsentry+was+successfully+created." for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Processing by PollsController#index as HTML
+  Parameters: {"notice"=>"Newsentry was successfully created."}
+  [1m[36mCreator Load (0.5ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 2
+  Rendered polls/index.html.haml within layouts/application (49.7ms)
+  Rendered layouts/_desktop.html.haml (23.7ms)
+Completed 200 OK in 94ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:44:34 +0100
+Served asset /Logo.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:44:35 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:44:35 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:44:35 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:44:35 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:44:35 +0100
+Served asset /star.png - 304 Not Modified (5ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Processing by PollsController#index as HTML
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.5ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 2
+  Rendered polls/index.html.haml within layouts/application (28.8ms)
+  Rendered layouts/_desktop.html.haml (19.7ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /desktop/application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /Logo.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /bin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:44:38 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:45:10 +0100
+Processing by PollsController#index as HTML
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (1.0ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  Rendered polls/index.html.haml within layouts/application (194.7ms)
+Completed 500 Internal Server Error in 215ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    17:     .poll_preview_chart_type
+    18:       = poll_creation.chart_type
+    19:     .poll_preview_tinyurl
+    20:       =  link_to poll_creation.shorturl poll_creation.shorturl
+    21: 
+    22:     %ul.poll_index_actions
+    23:       %li
+  app/views/polls/index.html.haml:20:in `block in _app_views_polls_index_html_haml___964290417_78793670'
+  app/views/polls/index.html.haml:9:in `_app_views_polls_index_html_haml___964290417_78793670'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.8ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.6ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:46:07 +0100
+Processing by PollsController#index as HTML
+  [1m[35mCreator Load (2.1ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPoll Load (0.4ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1
+  Rendered polls/index.html.haml within layouts/application (35.5ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    17:     .poll_preview_chart_type
+    18:       = poll_creation.chart_type
+    19:     .poll_preview_tinyurl
+    20:       =  link_to poll_creation.shorturl "#{poll_creation.shorturl}"
+    21: 
+    22:     %ul.poll_index_actions
+    23:       %li
+  app/views/polls/index.html.haml:20:in `block in _app_views_polls_index_html_haml___964290417_110761340'
+  app/views/polls/index.html.haml:9:in `_app_views_polls_index_html_haml___964290417_110761340'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.0ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.7ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:46:09 +0100
+Processing by PollsController#index as HTML
+  [1m[36mCreator Load (0.4ms)[0m  [1mSELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1[0m
+  [1m[35mPoll Load (0.4ms)[0m  SELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1[0m
+  Rendered polls/index.html.haml within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    17:     .poll_preview_chart_type
+    18:       = poll_creation.chart_type
+    19:     .poll_preview_tinyurl
+    20:       =  link_to poll_creation.shorturl "#{poll_creation.shorturl}"
+    21: 
+    22:     %ul.poll_index_actions
+    23:       %li
+  app/views/polls/index.html.haml:20:in `block in _app_views_polls_index_html_haml___964290417_110761340'
+  app/views/polls/index.html.haml:9:in `_app_views_polls_index_html_haml___964290417_110761340'
+
+
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.4ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.4ms)
+  Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.2ms)
+
+
+Started GET "/polls" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Processing by PollsController#index as HTML
+  [1m[35mCreator Load (0.4ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPoll Load (0.5ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."creator_id" = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 2[0m
+  Rendered polls/index.html.haml within layouts/application (55.8ms)
+  Rendered layouts/_desktop.html.haml (20.5ms)
+Completed 200 OK in 104ms (Views: 87.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /desktop/application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /Logo.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/star.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /star.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:46:20 +0100
+Served asset /bin.png - 304 Not Modified (6ms)
+
+
+Started GET "/polls/xgdsfg" for 127.0.0.1 at 2013-01-23 23:46:25 +0100
+Processing by PollsController#show as HTML
+  Parameters: {"id"=>"xgdsfg"}
+  [1m[35mCreator Load (1.2ms)[0m  SELECT "creators".* FROM "creators" WHERE "creators"."id" = 1 LIMIT 1
+  [1m[36mPoll Load (0.3ms)[0m  [1mSELECT "polls".* FROM "polls" WHERE "polls"."slug" = 'xgdsfg' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) AS count_all, guid AS guid FROM "answers" WHERE "answers"."poll_id" = 2 GROUP BY guid
+  [1m[36mAnswerPossibility Load (0.2ms)[0m  [1mSELECT "answer_possibilities".* FROM "answer_possibilities" WHERE "answer_possibilities"."poll_id" = 2[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 4[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 4
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."answer_possibility_id" = 5[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."poll_id" = 2
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."poll_id" = 2[0m
+  Rendered polls/show.html.haml within layouts/application (20.8ms)
+  Rendered layouts/_desktop.html.haml (168.6ms)
+Completed 200 OK in 229ms (Views: 198.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/desktop/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /desktop/application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subtle_stripes.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /subtle_stripes.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/Logo.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /Logo.png - 304 Not Modified (18ms)
+
+
+Started GET "/assets/white.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /white.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bin.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /bin.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/edit.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /edit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pie_chart.png" for 127.0.0.1 at 2013-01-23 23:46:26 +0100
+Served asset /pie_chart.png - 304 Not Modified (0ms)
