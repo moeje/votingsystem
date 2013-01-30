@@ -70,7 +70,7 @@ class PollsController < ApplicationController
 
       #@poll.shorturl = tinyfy("#{request.protocol}#{request.host_with_port}/poll_voting/vote/#{@poll.slug}")
       
-      #@poll.save
+      @poll.save
 			answer_possibilities = params[:poll][:answer_possibilities_attributes]
 			answer_possibilities.each do |k,v|
 				v.each do |k1,v1|
