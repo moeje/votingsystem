@@ -258,7 +258,7 @@ DEPENDENCIES
   activeadmin (= 0.5.0)
   bootstrap-sass
   cancan
-  capistrano
+  capistrano (= 2.13.5)
   capybara
   coffee-rails (~> 3.2.1)
   cucumber

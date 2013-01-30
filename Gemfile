@@ -13,7 +13,7 @@ gem 'cancan'
 gem 'activeadmin', '0.5.0'
 gem 'paperclip'
 gem 'multi_json'
-gem 'capistrano'
+gem 'capistrano', '2.13.5'
 
 gem 'friendly_id'
 
