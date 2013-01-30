@@ -339,3 +339,113 @@ Served asset /Logo.png - 304 Not Modified (0ms)
   [1m[35m (3.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130108101701')
   [1m[36m (3.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2012271014125559')[0m
   [1m[35m (4.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2012261014114444')
+
+
+Started GET "/admin/poll_types" for 127.0.0.1 at 2013-01-30 19:27:25 +0100
+Processing by Admin::PollTypesController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Compiled active_admin.css  (5762ms)  (pid 10702)
+Compiled active_admin/print.css  (670ms)  (pid 10702)
+  [1m[35m (103.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "poll_types" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPollType Load (0.2ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" ORDER BY "poll_types"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (7173.6ms)
+Completed 500 Internal Server Error in 7367ms
+
+ActionView::Template::Error (undefined local variable or method `default_action' for                   <div class="index_as_table"></div>
+:ActiveAdmin::Views::IndexAsTable):
+    1: insert_tag renderer_for(:index)
+  app/admin/poll_types.rb:6:in `block (3 levels) in <top (required)>'
+  app/admin/poll_types.rb:5:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.2ms)
+
+
+Started GET "/admin/poll_types" for 127.0.0.1 at 2013-01-30 19:28:44 +0100
+Processing by Admin::PollTypesController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "poll_types" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPollType Load (0.1ms)[0m  SELECT "poll_types".* FROM "poll_types" ORDER BY "poll_types"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (53.2ms)
+Completed 500 Internal Server Error in 158ms
+
+ActionView::Template::Error (undefined local variable or method `default_action' for                   <div class="index_as_table"></div>
+:ActiveAdmin::Views::IndexAsTable):
+    1: insert_tag renderer_for(:index)
+  app/admin/poll_types.rb:6:in `block (3 levels) in <top (required)>'
+  app/admin/poll_types.rb:5:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/admin/poll_types" for 127.0.0.1 at 2013-01-30 19:29:08 +0100
+Processing by Admin::PollTypesController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "poll_types" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPollType Load (0.1ms)[0m  [1mSELECT "poll_types".* FROM "poll_types" ORDER BY "poll_types"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (52.9ms)
+Completed 500 Internal Server Error in 158ms
+
+ActionView::Template::Error (undefined local variable or method `default_actions' for                   <div class="index_as_table"></div>
+:ActiveAdmin::Views::IndexAsTable):
+    1: insert_tag renderer_for(:index)
+  app/admin/poll_types.rb:6:in `block (3 levels) in <top (required)>'
+  app/admin/poll_types.rb:5:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/admin/poll_types" for 127.0.0.1 at 2013-01-30 19:29:43 +0100
+Processing by Admin::PollTypesController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "poll_types" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "poll_types" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPollType Load (0.1ms)[0m  SELECT "poll_types".* FROM "poll_types" ORDER BY "poll_types"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p374/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (440.1ms)
+Completed 200 OK in 493ms (Views: 442.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-01-30 19:29:44 +0100
+Served asset /active_admin.css - 304 Not Modified (94ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2013-01-30 19:29:44 +0100
+Compiled jquery-ui.js  (6ms)  (pid 10702)
+Compiled active_admin/lib/namespace.js  (168ms)  (pid 10702)
+Compiled active_admin/components/jquery.aa.checkbox-toggler.js  (140ms)  (pid 10702)
+Compiled active_admin/components/jquery.aa.dropdown-menu.js  (146ms)  (pid 10702)
+Compiled active_admin/components/jquery.aa.popover.js  (297ms)  (pid 10702)
+Compiled active_admin/components/jquery.aa.table-checkbox-toggler.js  (377ms)  (pid 10702)
+Compiled active_admin/pages/application.js  (334ms)  (pid 10702)
+Compiled active_admin/pages/batch_actions.js  (365ms)  (pid 10702)
+Compiled active_admin/application.js  (1938ms)  (pid 10702)
+Compiled active_admin/base.js  (2197ms)  (pid 10702)
+Compiled active_admin.js  (2208ms)  (pid 10702)
+Served asset /active_admin.js - 304 Not Modified (2309ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2013-01-30 19:29:47 +0100
+Served asset /active_admin/print.css - 304 Not Modified (144ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2013-01-30 19:29:47 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (17ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2013-01-30 19:29:47 +0100
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (96ms)
