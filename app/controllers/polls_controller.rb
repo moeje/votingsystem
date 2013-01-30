@@ -66,7 +66,7 @@ class PollsController < ApplicationController
 	  respond_to do |format|
 	    if @poll.save
 
-        @poll.shorturl = "#{request.protocol}#{request.host_with_port}/poll_voting/vote/#{@poll.slug}"
+        @poll.shorturl = "#{request.protocol}#{request.host_with_port}/poll_voting/vote?id=#{@poll.slug}"
 
       #@poll.shorturl = tinyfy("#{request.protocol}#{request.host_with_port}/poll_voting/vote/#{@poll.slug}")
       
