@@ -14,12 +14,23 @@ gem 'activeadmin', '0.5.0'
 gem 'paperclip'
 gem 'multi_json'
 gem 'capistrano'
-gem 'mysql2'
+
 gem 'friendly_id'
-gem 'bitly'
-group :test do
-  gem 'rspec'
+
+
+group :production do
+  gem 'mysql2'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+end
+
+group :test do  
   gem 'cucumber'
+  gem 'capybara'
   
 end
 # Gems used only for assets and not required
