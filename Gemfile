@@ -13,7 +13,7 @@ gem 'cancan'
 gem 'activeadmin', '0.5.0'
 gem 'paperclip'
 gem 'multi_json'
-gem 'capistrano', '2.13.5'
+gem 'capistrano'
 
 gem 'friendly_id'
 
@@ -52,6 +52,7 @@ group :development do
   gem 'hpricot'
   gem 'ruby_parser'
   gem 'pry'
+  gem 'rails_best_practices'
 end
 
 gem 'jquery-rails'
