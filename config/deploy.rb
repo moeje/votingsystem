@@ -8,8 +8,8 @@ set :domain, '194.94.7.165'
 set :application, 'votingsystem'
 
 # adjust if you are using RVM, remove if you are not
-File.expand_path('./lib', ENV['rvm_path'])
-require "bundler/capistrano"
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+set :rvm_type, :system
 #require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.3'
 
