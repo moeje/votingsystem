@@ -16,7 +16,7 @@ gem 'multi_json'
 gem 'capistrano'
 gem 'mysql2'
 gem 'friendly_id'
-
+gem 'bitly'
 group :test do
   gem 'rspec'
   gem 'cucumber'

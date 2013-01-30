@@ -59,9 +59,10 @@ class PollsController < ApplicationController
 	end
 
 	def create
+    bitly = Bitly.new("moeje","R_4f379566ba74dc5f2e09e227c64dc8eb")
 	  @poll = Poll.new(params[:poll])
 	  @poll.creator_id = current_creator.id
-	  @poll.shorturl = tinyfy("194.94.7.165/polls/#{@poll.title}")
+	  @poll.shorturl = bitly.shorten("http://0.0.0.0:3000/polls/#{@poll.title}").short_url
 	
 
 	  respond_to do |format|
