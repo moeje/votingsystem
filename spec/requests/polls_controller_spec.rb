@@ -55,7 +55,7 @@ describe PollsController, :type => :request do
   it "can edit a poll" do
     login_with_c
 
-    @poll_single_choice =Factory.create(:poll_single, :creator_id=>@user.id)
+    @poll_single_choice =FactoryGirl.create(:poll_single, :creator_id=>@user.id)
     new_day = (Date.today+25).day   
 
     visit "polls/#{@poll_single_choice.id}/edit"
@@ -69,7 +69,7 @@ describe PollsController, :type => :request do
 
   end
   it "can delete a poll" do
-    @poll_single_choice =Factory.create(:poll_single, :creator_id=>@user.id)
+    @poll_single_choice =FactoryGirl.create(:poll_single, :creator_id=>@user.id)
     login_with_c
     within ('.poll_preview') do
       click_link 'löschen'

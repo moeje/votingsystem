@@ -20,7 +20,7 @@ describe PollVotingController do
        answerp=@poll_single_choice.answer_possibilities.first
        choose("radio-choice-#{answerp.id}")
        click_button ('Abstimmen')
-       current_path.should eql "/poll_voting/show/#{@poll_single_choice.id}"
+       current_path.should eql "/poll_voting/show/#{@poll_single_choice.slug}"
        page.should have_css "#google_img"
     end
   end
@@ -38,7 +38,7 @@ describe PollVotingController do
        answerp=@poll_multiple_choice.answer_possibilities.first
        check("checkbox-#{answerp.id}")
        click_button ('Abstimmen')
-       current_path.should eql "/poll_voting/show/#{@poll_multiple_choice.id}"
+       current_path.should eql "/poll_voting/show/#{@poll_multiple_choice.slug}"
        page.should have_css "#google_img"
     end
   end
@@ -53,7 +53,7 @@ describe PollVotingController do
       click_button ('Abstimmen')
       # Das zweite Mal versuchen abzustimmen
       visit "/poll_voting/vote/#{@poll_multiple_choice.slug}"
-      current_path.should eql "/poll_voting/show/#{@poll_multiple_choice.id}"
+      current_path.should eql "/poll_voting/show/#{@poll_multiple_choice.slug}"
     end
   end
 
